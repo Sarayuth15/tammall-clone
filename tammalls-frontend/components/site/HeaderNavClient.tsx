@@ -41,7 +41,7 @@ export function HeaderNavClient({ categories }: { categories: CategoryDto[] }) {
       <div className="hidden border-t border-black/5 bg-white md:block">
         <div className="mx-auto flex w-full max-w-6xl items-center gap-3 px-4 py-2">
           <div className="relative">
-            <button
+            {/* <button
               type="button"
               onClick={() => setCatOpen((v) => !v)}
               className={cn(
@@ -50,7 +50,7 @@ export function HeaderNavClient({ categories }: { categories: CategoryDto[] }) {
               )}
             >
               Categories <ChevronDown className={cn("h-4 w-4 transition", catOpen && "rotate-180")} />
-            </button>
+            </button> */}
 
             {catOpen ? (
               <>
@@ -91,20 +91,20 @@ export function HeaderNavClient({ categories }: { categories: CategoryDto[] }) {
           </div>
 
           <div className="flex items-center gap-5 px-2 text-sm font-semibold text-zinc-700">
-            <Link href="/products" className="hover:text-black">
+            {/* <Link href="/products" className="hover:text-black">
               Shop
-            </Link>
-            <Link href="/products?sort=new" className="hover:text-black">
+            </Link> */}
+            {/* <Link href="/products?sort=new" className="hover:text-black">
               New arrivals
-            </Link>
-            <Link href="/account/orders" className="hover:text-black">
+            </Link> */}
+            {/* <Link href="/account/orders" className="hover:text-black">
               Orders
-            </Link>
+            </Link> */}
           </div>
 
           <div className="flex-1" />
 
-          <div className="text-xs font-semibold text-zinc-500">Free delivery on select items</div>
+          {/* <div className="text-xs font-semibold text-zinc-500">Free delivery on select items</div> */}
         </div>
       </div>
 

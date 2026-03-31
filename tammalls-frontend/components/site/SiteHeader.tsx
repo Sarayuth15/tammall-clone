@@ -11,10 +11,10 @@ function TopBar() {
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-4 py-2 text-xs">
         <div className="flex items-center gap-2 text-white/90">
           <span className="font-semibold">TamMalls</span>
-          <span className="hidden text-white/40 sm:inline">•</span>
-          <span className="hidden text-white/70 sm:inline">Fast delivery</span>
-          <span className="hidden text-white/40 sm:inline">•</span>
-          <span className="hidden text-white/70 sm:inline">Secure checkout</span>
+          {/* <span className="hidden text-white/40 sm:inline">•</span> */}
+          {/* <span className="hidden text-white/70 sm:inline">Fast delivery</span> */}
+          {/* <span className="hidden text-white/40 sm:inline">•</span> */}
+          {/* <span className="hidden text-white/70 sm:inline">Secure checkout</span> */}
         </div>
         <div className="hidden items-center gap-4 text-white/70 sm:flex">
           <span>Support: +855 000 000</span>
