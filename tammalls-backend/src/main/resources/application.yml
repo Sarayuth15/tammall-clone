@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: tammalls-api
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/tammalls_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: yuthMySQL$$168
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+    show-sql: false
+    open-in-view: false
+
+  jackson:
+    default-property-inclusion: non_null
+    serialization:
+      write-dates-as-timestamps: false
+      indent-output: true
+    time-zone: UTC
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+logging:
+  level:
+    root: INFO
+    com.tammalls: DEBUG
+    org.springframework.web: DEBUG
+    org.hibernate.SQL: DEBUG
+
+app:
+  jwt:
+    secret: your-secret-key-change-this-in-production-min-256-bits-long-string
+    expiration: 86400000 # 24 hours in milliseconds
